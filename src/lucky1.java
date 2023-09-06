@@ -12,16 +12,16 @@ public class lucky1 {
 		
 		
 		String vastaus = "";
-		int raha = 0;
-//		raha = Integer.parseInt(in.nextLine);
+		int raha = 5;
+
 		
 		System.out.println("*******\n\nTervetuloa pelaamaan Lucky7!\n\n*******");
 		vastaus = in.nextLine();
 		
-//		System.out.println("Syötä summa jolla haluat pelata.");
-//		System.out.println("");
-//		vastaus = in.nextLine();
-//		raha = Integer.parseInt(in.nextLine);
+		//System.out.println("Syötä summa jolla haluat pelata.");
+		//System.out.println("");
+		//vastaus = in.nextLine();
+		//raha = Integer.parseInt(in.nextLine);
 
 		
 		do{	
@@ -70,6 +70,7 @@ public class lucky1 {
 				{
 				System.out.println("\n\nPelaa uusi kierros painamalla enter\nPelikassan saldo: " + raha + " €");
 				vastaus = in.nextLine();
+				//The player may choose to either play again or to stop playing. This also shows the available funds.
 				if(raha == 0)
 					System.out.println("\nPeli päättyy.");
 				}
