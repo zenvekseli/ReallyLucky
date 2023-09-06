@@ -42,21 +42,27 @@ public class lucky1 {
 					if((random1 == 7 && random2 != 7 && random3 != 7) || (random1 != 7 && random2 == 7 && random3 != 7) || (random1 != 7 && random2 != 7 && random3 == 7))
 						//If one of the numbers is seven and other two are not.
 					{
-						System.out.println("Voitit 3 €! Pelikassa " + (raha + 3) + " €\n");
+						System.out.println("Voitit 3 €!");
 						raha = raha + 3; //The prize money is added to the players funds.
 					}
 					
 					//If one of the numbers is 7, the player gets three more euros.
 					else if((random1 == 7 && random2 == 7 && random3 != 7) || (random1 != 7 && random2 == 7 && random2 == 7) || (random1 == 7 && random2 != 7 && random3 == 7))
 					{
-						System.out.println("Voitit 5 €! Pelikassa " + (raha + 5) + " €\n");
+						System.out.println("Voitit 5 €!");
 						raha = raha + 5;
 					}
 					//if two of the numbers are seven, the player gets five more euros.
 					else if(random1 == 7 && random2 == 7 && random3 == 7)
 					{
-						System.out.println("Päävoitto! Voitit 10 €! Pelikassa " + (raha + 10) + " €\n");
+						System.out.println("Päävoitto! Voitit 10 €!");
 						raha = raha + 10;
+					}
+					else if(random1 == 0 && random2 == 0 && random3 == 0)
+					{
+						System.out.println("Rosvosektori!");
+						raha = 0;
+						//If the player gets three zeros in a row, they lose all the money they had.
 					}
 					
 				else if(random1 != 7 && random2 != 7 && random3 != 7)
